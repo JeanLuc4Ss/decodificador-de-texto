@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Decodificador de Texto</title>
+</head>
+
+<body>
+
+  <header>
+    <img class="logo-alura" src="./imgs/alura-logo.png" alt="Logo da Alura"/>
+  </header>
+
+  <main class="container-principal">
+    <section class="conteudo-principal">
+      <textarea class="input-text" placeholder="Digite seu texto..." cols="40" rows="13"></textarea>
+      
+      <p>
+        <span>
+          <img src="./imgs/aviso.png" alt="Alerta" width="10px" height="10px"/>
+        </span>
+        <span class="info" style="font-size: 12px">Apenas letras minúsculas e sem acento.</span>
+      </p>
+      
+      <div class="container-btn">
+        <button class="btn-criptografar" type="button" onclick="criptografar()">Criptografar</button>
+        <button class="btn-descriptografar" type="button" onclick="descriptografar()">Descriptografar</button>
+      </div>
+    </section>
+
+    <div class="display-texto fade-in">
+      <div class="resultado-texto">
+        <img class="imagem-conteudo" src="./imgs/boneco.png" alt="Mensagem Inválida"/>
+        <h3>Nenhuma mensagem encontrada</h3>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Desenvolvido por Jean Lucas</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
